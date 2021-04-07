@@ -19,8 +19,8 @@ class ViewController: UIViewController {
         let billAmount:Double=Double(billAmountTxt.text!)!
         let tipAmount:Double=(Double(tipPercentTxt.text!)! / 100 ) * billAmount
         tipAmountLbl.text="\(tipAmount)"
-        tipAmountLbl.text = String(format: "$%.02f", tipAmount)
-        billAmountLbl.text=String(format:"$%.02f",billAmount + tipAmount)
+        tipAmountLbl.text = String(format: "$ %.02f", tipAmount)
+        billAmountLbl.text=String(format:"$ %.02f",billAmount + tipAmount)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
